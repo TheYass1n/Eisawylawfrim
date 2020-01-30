@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -18,13 +20,15 @@
         <ul class="nav-link">
             <li><a href="#">الرئسية</a></li>
             <li><a href="#about-us">من نحن</a></li>
-            <li><a href="#">خدماتنا</a></li>
-            <li><a href="#">الفريق</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#team">الفريق</a></li>
             <li><a href="#">المكاتب المتعاونة</a></li>
+            <li><a href="#contact"> تواصل</a></li>
+
         </ul>
 
         <div class="phone-number">
-            <span > <img src="/imgs/phone-solid.svg" > 0993535955 </span>
+            <span> <img src="/imgs/phone-solid.svg"> 0993535955 </span>
         </div>
     </nav>
 
@@ -33,20 +37,18 @@
     </header>
     <section id="about-us" class='about-us'>
         <div style="display: flex; flex-direction: column;">
-            <h2>من نحن</h2>
-            <p>اسس مكتب عيساوي للمحاماة و الاستشارات القانونية عام 2010 لتلبية المتطلبات القانونية للنمو الشامل في التي تشهدها دولة السودان في كافة مناحي الحياة كواحدة من اهم وجهات الاعمال التجارية في السودان .
-
-                مكتب عيساوي اليوم احد  الاسماء الرائدة في مجال العمل القانوني في السودان</p>
-                <button class="more">المزيد</button>
+            <h2>مكتب عيساوي للمحاماة و الاستشارات القانونية </h2>
+            <p>منذ تأسسه في الخرطوم، السودان عام 2010 اكتسب المكتب سمعة متميزة في تقديم مستوي رفيع من الخدمات القانونية لعملائه في نطاق واسع من المجالات المختلفة. عملنا الجاد لارضاء العملاء جعل منا مكتب متميز لاننا نتبع اساليب متجددة لخدمة عملائنا بما فيها تكوين العلاقات التي تساعدنا علي تخصيص خدماتنا بما يلائم مع ظروف عملائنا و حاجاتهم. لدى محامي المكتب مستوى عال من الخبرة و المهارات القانونية في القانون السوداني و القانونين حول مجتمعنا الاقليمي و انواع الخدمات القانونية المتعلقة بامور الشركات، اعداد التقارير، الدمج، الملكية الفكرية، النفط و الغاز، الاتصالات، و التحكيم و التوفيق بالاضافة الي توفير النصح القانوني في الامور التجارية والقانونية في كافة المجالات المختلفة.</p>
+          <!--<button class="more">المزيد</button>-->
         </div>
         <div class="team-pic">
             <span> </span>
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <h2>الخدمات القانونية</h2>
-        <span>مختلف انواع الخدمات التي يقدمها  المكتب </span>
+        <span>مختلف انواع الخدمات التي يقدمها المكتب </span>
         <div class="servise-box">
             <div><span>الاستشارات القانونية</span></div>
             <div><span>اعداد و صياغة العقود</span></div>
@@ -54,11 +56,11 @@
             <div><span>التمثيل القضائي امام كافة المحاكم</span> </div>
         </div>
     </section>
-    <section class="team">
-        <h2>فريق العمل</h2>
+    <section id="team" class="team">
+        <h2>فريق المحاماة</h2>
         <span>لدينا فريق من المختصين يتعاملون مع مجموعة واسعة من القضايا</span>
         <span>لدي محامينا المعرفة والخبرة و المهارات اللازمة للدفاع من اجلك </span>
-        <span>مع كثر من 20 عاما من الخبرة نحن الخيار الافضل لقضيتك</span>
+        <span>مع كثر من 10 عاما من الخبرة نحن الخيار الافضل لقضيتك</span>
         <div class="team-member">
             <div>
                 <img src="./imgs/team3.png" alt="">
@@ -77,22 +79,23 @@
             </div>
         </div>
     </section>
-    <section class="contect-us">
-      <div cclass="form">
-          <form action="">
-              <input name="user-name" placeholder="الاسم الكامل" type="text">
-              <input type="tel" placeholder="رقم الهاتف" name="phone" id="">
-              <input type="email" placeholder="البريد الالكتروني" name="email" id="">
-              <textarea placeholder="الرسالة" name="" id="" cols="30" rows="10"></textarea>
-              <input  value="ارسال" class="submit" type="submit">
-          </form>
-      </div>
-      <div>
-          <h2>لا تتردد في التواصل معنا للاشتشارة القانونية</h2>
-      </div>
+    <section id="contact" class="contect-us">
+        <div cclass="form">
+            <form action="">
+                <input name="user-name" placeholder="الاسم الكامل" type="text">
+                <input type="tel" placeholder="رقم الهاتف" name="phone" id="">
+                <input type="email" placeholder="البريد الالكتروني" name="email" id="">
+                <textarea placeholder="الرسالة" name="" id="" cols="30" rows="10"></textarea>
+                <input value="ارسال" class="submit" type="submit">
+            </form>
+        </div>
+        <div>
+            <h2>لا تتردد في التواصل معنا للاشتشارة القانونية</h2>
+        </div>
     </section>
-    
+
     <footer>
+      <div class="footer-contener">
         <div class="footer-logo">
             <img src="./imgs/footer logo.png" alt="footer logo">
         </div>
@@ -107,11 +110,18 @@
         <div class="footer-contect">
             <h2>تواصل</h2>
             <ul>
-                <li><span>+249993535955</span></li>
-                <li><span>Eesawy@gmail.com</span></li>
-                <li><span>العنوان</span></li>
+                <li><span>+249912410430</span></li>
+                <li><span>+249121455719</span></li>
+                <li><span>eissasalih@gmail.com</span></li>
+                <li><span style="font-size: 12px;">الخرطوم، السودان <br> عمارة خليل احمد الطابق الاول <br> مكتب رقم (2)</span></li>
             </ul>
         </div>
+      </div>
+       <hr>
+       <div class="copy-right">
+           All Right For Easawy Law Frim | Desgin By <a href="#">Yassin Hussein</a>
+       </div>
     </footer>
 </body>
+
 </html>
