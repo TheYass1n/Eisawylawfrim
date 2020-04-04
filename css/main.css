@@ -10,6 +10,9 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
 html, body{
     width: 100%;
     font-family: IRANSans;
@@ -167,13 +170,38 @@ header{
     grid-template-rows: 25% 25% 25% 25% ;
 }
 .servise-box  div{
-    background: burlywood;
     width:250px;
     height: 250px;
     justify-self: center;
     position: relative;
 
 }
+
+
+.consultation{
+    background: url(../imgs/talk-to-lwyer.jpeg);
+     background-position: center;
+    background-size: cover;
+}
+
+.drafting-contracts{
+     background: url(../imgs/contract2.jpg);
+      background-position: center;
+    background-size: cover;
+}
+
+.company-registration{
+     background: url(../imgs/تسجيل-شركات.jpg);
+      background-position: center;
+    background-size: cover;
+}
+
+.judicial-representation{
+     background: url(../imgs/in-cort.jpg);
+      background-position: center;
+    background-size: cover;
+}
+
 .servise-box div:hover{
     box-shadow:0 1px 6px rgba(0, 0, 0, 0.2);
 }
@@ -310,3 +338,123 @@ footer a:hover{
     color: white;
 
 }
+
+/************************************************/
+/********** responsive for small screen *********/
+
+@media only screen and (max-width: 750px){
+    nav{
+        justify-content: flex-end;
+    }
+
+    nav .logo img{
+        width: auto;
+        height: 31px;
+    }
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 2.4rem;
+        right:0;
+        background: #fff;
+        padding: 13px;
+        display: none;
+        z-index: -1;
+
+    }
+    nav ul li{
+        padding: 8px 0;
+        border-bottom: .7px solid #9E9E9E;
+    }
+
+    nav ul li:last-child{
+        border: none;
+    }
+
+
+    nav ul a:active, a:hover, a:focus{
+    color: rgb(4, 185, 4);
+    padding-bottom:7px;
+    border-bottom: 3px solid rgb(4, 185, 4);
+
+   }
+    .phone-number{
+        display: none;
+    }
+
+    .about-us h2{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .about-us p{
+        width: 100%;
+        text-align: right;
+        padding: 0 20px;
+    }
+    .servise-box{
+        width: 100%;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 48% 48%;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+
+    .servise-box div{
+        width: 100%;
+        height: 200px;
+    }
+
+    .team-member{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contect-us{
+        flex-direction: column-reverse;
+    }
+
+    .contect-us form{
+        width: 95%;
+    }
+
+    .contect-us  h2{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: .8rem;
+    }
+    .contect-us div{
+        width: 100%;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+    .mobile-menu{
+        position: absolute;
+        right: 15px;
+
+    }
+    .mobile-menu svg path{
+        fill: #000;
+    }
+}
+
+
+
+
+/*****************************************************/
+/******************* decktop ************************/
+
+@media only screen and (min-width: 750px){
+    .mobile-menu{
+        display: none;
+    }
+}
+
+
+
+

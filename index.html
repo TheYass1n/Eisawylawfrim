@@ -13,11 +13,24 @@
 
 <body>
     <nav>
+        <div id="menu" class="mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Symbol_16" data-name="Symbol 16" clip-path="url(#clip-path)">
+    <path id="Menu" d="M-6160,14V12h10v2Zm0-6V6h16V8Zm0-6V0h16V2Z" transform="translate(6160 1)" fill="#2699fb"/>
+    <rect id="Rectangle_1446" data-name="Rectangle 1446" width="16" height="16" transform="translate(0)" fill="none"/>
+  </g>
+</svg>
+        </div>
         <div class="logo">
             <img src="/imgs/logo.png" alt="logo" srcset="">
         </div>
 
-        <ul class="nav-link">
+        <ul id="nav-links" class="nav-link">
             <li><a href="#">الرئسية</a></li>
             <li><a href="#about-us">من نحن</a></li>
             <li><a href="#services">خدماتنا</a></li>
@@ -50,10 +63,10 @@
         <h2>الخدمات القانونية</h2>
         <span>مختلف انواع الخدمات التي يقدمها المكتب </span>
         <div class="servise-box">
-            <div><span>الاستشارات القانونية</span></div>
-            <div><span>اعداد و صياغة العقود</span></div>
-            <div><span>تاسيس الشركات و اسماء الاعمال</span></div>
-            <div><span>التمثيل القضائي امام كافة المحاكم</span> </div>
+            <div class="consultation"><span>الاستشارات القانونية</span></div>
+            <div class="drafting-contracts"><span>اعداد و صياغة العقود</span></div>
+            <div class="company-registration"><span>تاسيس الشركات و اسماء الاعمال</span></div>
+            <div class="judicial-representation"><span>التمثيل القضائي امام كافة المحاكم</span> </div>
         </div>
     </section>
     <section id="team" class="team">
@@ -122,6 +135,27 @@
            All Right For Easawy Law Frim | Desgin By <a href="#">Yassin Hussein</a>
        </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+249912410430", // WhatsApp number
+            call_to_action: "اتواصل معنا بالواتس", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
 </body>
 
 </html>
