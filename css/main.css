@@ -1,6 +1,6 @@
 @font-face{
     font-family: IRANSans;
-    src : url(/css/FontsFree-Net-ir_sans.ttf);
+    src : url(../css/FontsFree-Net-ir_sans.ttf);
 }
 *{
     margin: 0;
@@ -408,16 +408,31 @@ footer a:hover{
     }
 
     .team-member{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        overflow: scroll;
+        white-space: normal;
+        justify-content: normal;
     }
 
+    .team-member div{
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .contect-us{
         flex-direction: column-reverse;
     }
 
     .contect-us form{
         width: 95%;
+    }
+    .contect-us form input{
+        width: 90%;
+    }
+
+    .contect-us form textarea {
+        width: 90%;
     }
 
     .contect-us  h2{
